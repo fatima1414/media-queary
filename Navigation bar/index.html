@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            background-color: red;
+            line-height: 50px;
+
+            .logo{
+                padding-left: 100px;
+            }
+        }
+
+        .list{
+            display: flex;
+            padding-right: 100px;
+            li{
+                list-style: none;
+                margin-left: 40px;
+            }
+        }
+
+
+        @media (min-width:500px) and (max-width:900px){
+            .navbar{
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .logo{
+                display: flex;
+                justify-content: center;
+
+                .fa-n{
+                    font-size: 50px;
+                }
+
+            }
+
+            .menu{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+     <div class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-n"></i>
+        </div>
+        <div class="menu">
+           <ul class="list">
+            <li>HOME </li>
+            <li>ABOUT</li>
+            <li>SERVICE</li>
+            <li>CONTACT</li>
+            
+         <li>
+            <select>
+                <option>FILE</option>
+                <option>project1</option>
+                <option>project2</option>
+                <option>project3</option>
+                <option>project4</option>  
+            </select>
+         </li>
+        </ul>
+        </div>   
+     </div>
+</body>
+</html>
